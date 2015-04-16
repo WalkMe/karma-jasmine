@@ -31,8 +31,8 @@
     "jasmine-core": "git://github.com/WalkMe/jasmine#wm-0.0.3"
   },
   "peerDependencies": {
-    "karma": ">=0.9",
-    "jasmine-core": "*"
+    "karma": "git://github.com/WalkMe/karma#wm-0.0.1",
+    "jasmine-core": "git://github.com/WalkMe/jasmine#wm-0.0.3"
   },
   "license": "MIT",
   "contributors": [

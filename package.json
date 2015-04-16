@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-jasmine.git"
+    "url": "git://github.com/WalkMe/karma-jasmine.git"
   },
   "keywords": [
     "karma-plugin",
@@ -28,7 +28,7 @@
     "grunt-auto-release": "~0.0.2",
     "grunt-npm": "~0.0.2",
     "grunt-bump": "~0.0.7",
-    "jasmine-core": "git://github.com/WalkMe/jasmine#wm-0.0.2"
+    "jasmine-core": "git://github.com/WalkMe/jasmine#wm-0.0.3"
   },
   "peerDependencies": {
     "karma": ">=0.9",

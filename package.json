@@ -32,6 +32,7 @@
   "peerDependencies": {
     "jasmine-jquery": "^2.0.6",
     "jquery": "1.11.2",
+    "test-page-loader": "*",
     "karma": ">=0.9",
     "jasmine-core": "*"
   },

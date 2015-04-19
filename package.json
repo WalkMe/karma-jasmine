@@ -16,7 +16,6 @@
     "jasmine"
   ],
   "author": "Vojta Jina <vojta.jina@gmail.com>",
-  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6",
@@ -31,6 +30,8 @@
     "jasmine-core": "git://github.com/WalkMe/jasmine#cff42a6"
   },
   "peerDependencies": {
+    "jasmine-jquery": "^2.0.6",
+    "jquery": "1.11.2",
     "karma": ">=0.9",
     "jasmine-core": "*"
   },

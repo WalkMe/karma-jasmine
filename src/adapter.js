@@ -213,7 +213,8 @@ function KarmaReporter(tc, jasmineEnv, options) {
       skipped     : skipped,
       success     : specResult.failedExpectations.length === 0,
       suite       : [],
-      time        : skipped ? 0 : options.timer.now() - specResult.startTime
+      time        : skipped ? 0 : options.timer.now() - specResult.startTime,
+      noPerformanceTest: specResult.noPerformanceTest
     };
 
     // generate ordered list of (nested) suite names

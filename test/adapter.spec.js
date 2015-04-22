@@ -13,14 +13,15 @@ describe('jasmine adapter', function(){
 
 
   describe('KarmaReporter', function(){
-    var reporter, karma, env, parentSuite, suite, spec;
+    var reporter, karma, env, parentSuite, suite, spec, options;
 
     beforeEach(function(){
       var jasmine = getJasmineRequireObj().core(jasmineRequire);
       env = jasmine.getEnv();
 
       karma = new Karma(new MockSocket(), null, null, null, {search: ''});
-      reporter = new KarmaReporter(karma, env);
+      options = {timer: new jasmine.Timer()};
+      reporter = new KarmaReporter(karma, env, options);
 
       spyOn(karma, 'result');
 
@@ -159,7 +160,7 @@ describe('jasmine adapter', function(){
     it('should report time for every spec', function(){
       var counter = 3;
 
-      spyOn(Date.prototype, 'getTime').andCallFake(function(){
+      spyOn(options.timer, 'now').andCallFake(function(){
         return counter+=1;
       });
 

@@ -307,10 +307,11 @@ var createSpecFilter = function(config, jasmineEnv) {
  * @param  {Object}   [jasmineEnv] Optional Jasmine environment for testing.
  * @return {Function}              Karma starter function.
  */
-function createStartFn(karma, jasmineEnv) {
+function createStartFn(karma, jasmineEnv, jasmine) {
   // This function will be assigned to `window.__karma__.start`:
   return function () {
-    jasmineEnv = jasmineEnv || window.jasmine.getEnv();
+    jasmine = jasmine || window.jasmine;
+    jasmineEnv = jasmineEnv || jasmine.getEnv();
 
     jasmineEnv.addReporter(new KarmaReporter(karma, jasmineEnv, {timer: new jasmine.Timer()}));
     jasmineEnv.execute();
